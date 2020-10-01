@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4043B947-2F51-4A9E-B9E9-997BBC7698DC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83D9BB34-C1D8-4580-AB39-B682D332B13B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{2F453461-B5FA-48D4-BD89-8B9F1A7FEEA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TanvirArjel.Extensions.Microsoft.Caching", "src\TanvirArjel.Extensions.Microsoft.Caching\TanvirArjel.Extensions.Microsoft.Caching.csproj", "{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore5.0", "samples\AspNetCore5.0\AspNetCore5.0.csproj", "{F813466B-1702-4833-8F4F-2F2913E40C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F813466B-1702-4833-8F4F-2F2913E40C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F813466B-1702-4833-8F4F-2F2913E40C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F813466B-1702-4833-8F4F-2F2913E40C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F813466B-1702-4833-8F4F-2F2913E40C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E6E0AEB-6F0A-4613-B23E-7B6F947B6549} = {83D9BB34-C1D8-4580-AB39-B682D332B13B}
+		{F813466B-1702-4833-8F4F-2F2913E40C1A} = {2F453461-B5FA-48D4-BD89-8B9F1A7FEEA5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2503A213-CD5E-4AA9-9BCA-FCB2D71BE84B}
+	EndGlobalSection
+EndGlobal

@@ -33,4 +33,11 @@ First install the lastest version of `TanvirArjel.Extensions.Microsoft.Caching` 
   6. `UpdateInListAsync<T, TKey>()` - 3 overloads
   7. `RemoveFromListAsync()` - 3 overloads
   
-  ## Thank you!
+  
+# Bug(🐞) Report
+
+   Dont forget to submit an issue if you face. we will try to resolve as soon as possible.
+   
+# Give a star (⭐)
+   
+   **If you find this library useful to you, please don't forget to encouraging me to do such more stuffs by giving a star (⭐) to this repository. Thank you.**

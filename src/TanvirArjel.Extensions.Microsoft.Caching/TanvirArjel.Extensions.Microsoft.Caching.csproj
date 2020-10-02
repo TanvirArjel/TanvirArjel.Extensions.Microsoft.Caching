@@ -2,6 +2,18 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>TanvirArjel</Authors>
+    <Description>This library extended the functionality of IDistributedCache interface to make the caching mechanism more easier in .NET 5.0 and .NET Core.</Description>
+    <Copyright>©2020 TanvirArjel. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/TanvirArjel/TanvirArjel.Extensions.Microsoft.Caching</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TanvirArjel/TanvirArjel.Extensions.Microsoft.Caching</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>1. This is the intitial release of this package.</PackageReleaseNotes>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>Caching, Distributed-Caching, Redis-Cache, InMemory-Cache, .NET-5.0, .NET-Core-3.1, .NET-Core</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0-*" />
@@ -9,6 +21,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="stylecop.json" />
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="images\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Include="stylecop.json" />

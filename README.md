@@ -1,4 +1,6 @@
 # TanvirArjel.Extensions.Microsoft.Caching
+[![latest version](https://img.shields.io/nuget/v/TanvirArjel.Extensions.Microsoft.Caching)](https://www.nuget.org/packages/TanvirArjel.Extensions.Microsoft.Caching) [![preview version](https://img.shields.io/nuget/vpre/TanvirArjel.Extensions.Microsoft.Caching)](https://www.nuget.org/packages/TanvirArjel.Extensions.Microsoft.Caching/absoluteLatest) [![downloads](https://img.shields.io/nuget/dt/TanvirArjel.Extensions.Microsoft.Caching)](https://www.nuget.org/packages/TanvirArjel.Extensions.Microsoft.Caching)
+
 This library extended the functionality of `IDistributedCache` interface to make the caching mechanism more easier in .NET 5.0 and .NET Core.
 
 ## How do I get started

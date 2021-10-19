@@ -209,7 +209,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
             {
                 List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
 
-                if (itemList == null)
+                if (itemList != null)
                 {
                     itemList.Add(item);
 
@@ -265,7 +265,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
             {
                 List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
 
-                if (itemList == null)
+                if (itemList != null)
                 {
                     itemList.Add(item);
 
@@ -321,7 +321,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
             {
                 List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
 
-                if (itemList == null)
+                if (itemList != null)
                 {
                     itemList.Add(item);
 

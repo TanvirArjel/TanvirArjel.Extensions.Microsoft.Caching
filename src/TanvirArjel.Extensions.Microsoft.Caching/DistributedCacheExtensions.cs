@@ -99,7 +99,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
             this IDistributedCache distributedCache,
             string cacheKey,
             T obj,
-            TimeSpan? offset,
+            TimeSpan offset,
             CancellationToken token = default)
         {
             if (distributedCache == null)

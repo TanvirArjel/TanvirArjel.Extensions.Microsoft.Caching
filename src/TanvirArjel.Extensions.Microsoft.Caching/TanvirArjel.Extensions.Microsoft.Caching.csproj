@@ -9,7 +9,7 @@
 		<PackageProjectUrl>https://github.com/TanvirArjel/TanvirArjel.Extensions.Microsoft.Caching</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/TanvirArjel/TanvirArjel.Extensions.Microsoft.Caching</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageReleaseNotes>1. This is the intitial release of this package.</PackageReleaseNotes>
+		<PackageReleaseNotes>1. ItemList not null check issue fixed.</PackageReleaseNotes>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>

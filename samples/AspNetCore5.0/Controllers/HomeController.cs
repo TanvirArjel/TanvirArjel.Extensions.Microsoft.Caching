@@ -22,11 +22,7 @@ namespace AspNetCore5._0.Controllers
         public async Task<IActionResult> Index()
         {
             string cacheKey = "Emloyee1";
-            Employee employee = new Employee()
-            {
-                Id = 1,
-                Name = "Tanvir"
-            };
+            Employee employee = Employee.Create(1, "Tanvir");
 
             await _distributedCache.SetAsync<Employee>(cacheKey, employee);
 

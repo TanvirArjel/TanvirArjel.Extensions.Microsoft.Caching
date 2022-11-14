@@ -17,6 +17,11 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
     /// </summary>
     public static class DistributedCacheExtensions
     {
+        private static readonly JsonSerializerOptions JsonSerializerOptions = new JsonSerializerOptions()
+        {
+            TypeInfoResolver = new PrivateConstructorContractResolver(),
+        };
+
         /// <summary>
         /// Asynchronously gets the value from the specified cache with the specified key.
         /// </summary>
@@ -38,7 +43,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                T t = JsonSerializer.Deserialize<T>(utf8Bytes);
+                T t = JsonSerializer.Deserialize<T>(utf8Bytes, JsonSerializerOptions);
                 return t;
             }
 
@@ -207,7 +212,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -263,7 +268,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -319,7 +324,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -375,7 +380,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -440,7 +445,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -505,7 +510,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -561,7 +566,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -625,7 +630,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -689,7 +694,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -753,7 +758,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -825,7 +830,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -897,7 +902,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -946,7 +951,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -1007,7 +1012,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
@@ -1068,7 +1073,7 @@ namespace TanvirArjel.Extensions.Microsoft.Caching
 
             if (utf8Bytes != null)
             {
-                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes);
+                List<T> itemList = JsonSerializer.Deserialize<List<T>>(utf8Bytes, JsonSerializerOptions);
 
                 if (itemList != null)
                 {
